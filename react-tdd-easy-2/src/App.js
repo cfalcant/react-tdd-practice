@@ -18,14 +18,14 @@ class App extends Component {
     ]
   }
   render () {
-    let listOfFoodItems = this.state.favFoods.map((food)=>{
-      return (
+    let listOfFoodItems = this.state.favFoods.map(food=>
           <li
             key={food.id}>
             {food.item}
           </li>
-      )
-    })
+        )
+
+
     return (
       <div>{listOfFoodItems}</div>
     )
