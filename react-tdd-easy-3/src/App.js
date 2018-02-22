@@ -5,11 +5,15 @@ class App extends Component {
     bands: ['garlic', 'butter', 'blah']
   }
   render () {
-    let bandElements = this.state.bands.map(band => <li>{band}</li>)
+    let allBands = this.state.bands.map(band =>
+      <li>
+        {band}
+      </li>
+    )
     return (
       <div>
         <ul>
-          {bandElements}
+          {allBands}
         </ul>
       </div>
     )
